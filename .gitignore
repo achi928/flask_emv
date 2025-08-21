@@ -1,0 +1,17 @@
+# Created by venv; see https://docs.python.org/3/library/venv.html
+# ---- Python venv 関連 ----
+bin/
+lib/
+include/
+pyvenv.cfg
+
+# ---- Python キャッシュ ----
+__pycache__/
+*.pyc
+
+# ---- ログ ----
+*.log
+
+# ---- 環境変数ファイル ----
+.env
+
