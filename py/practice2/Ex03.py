@@ -15,11 +15,12 @@ try:
 
   df = pd.read_csv(input_file)
 
-  average_score = df.groupby("date", as_index = False)["score"].mean()
+  average_score = df.groupby("date")["score"].mean()
   average_score.colums = ["Date", "Average Score"]
 
-  average_score.to_csv("date/output2.csv")
+  average_score.to_csv(outpuut_file)
   logging.info("各日の平均スコア出力しました。")
+  print("出力OK!!")
 
 except FileNotFoundError as e:
   logging.error(f"{input_file} の読み込みに失敗しました: {e}")
